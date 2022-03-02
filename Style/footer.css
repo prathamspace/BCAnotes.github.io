@@ -1,0 +1,32 @@
+.footer {
+    display: block;
+    height: 166px;
+    background-color: var(--primary-color);
+  }
+  
+  .footer-container{
+      justify-content: space-evenly;
+  }
+  .footer a{
+    color: #fff;
+  }
+  
+  .footer-logo{
+      margin-top: 44px;
+    color: white;
+
+  }
+  .footer-nav{
+      margin-top: 48px;
+  }
+  
+  .social{
+      margin-top: 58px;
+  }
+  .social a {
+    margin: 0 5px;
+    color: #fff;
+  }
+  .social a i {
+      color: #fff;
+  }

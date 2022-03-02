@@ -1,0 +1,195 @@
+/* .showcase{
+    margin-top:45px;
+  } */
+  .showcase-container {
+    background: var(--primary-color);
+  
+    color: #fff;
+    justify-content: center;
+    height: 425px;
+  }
+  
+  .showcase-text {
+    width: 50%;
+    flex-direction: column;
+  
+    padding: 20px 117px;
+  
+    margin-left: 28px;
+    animation: slideInFromLeft 500ms ease-in;
+  
+  }
+  .showcase-form{
+    animation: slideInFromRight 500ms ease-in;
+  
+  }
+  
+  .showcase-text h1 {
+    margin-top: 71px;
+  }
+  
+  .showcase-text p {
+    line-height: 1.6;
+  }
+  .showcase-btn {
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 9px;
+    width: 88px;
+    height: 33px;
+    text-align: center;
+    margin-top: 18px;
+    background: #ad1f2a;
+  }
+  
+  .showcase-btn:hover {
+    transform: scale(1.2);
+  }
+  
+  .showcase-btn a {
+    color: #fff;
+  }
+  
+  .showcase-form input[type="text"],
+  .showcase-form input[type="email"] {
+    width: 100%;
+    font-size: 16px;
+    border-width: 0px 0px 1px;
+  
+    border-bottom: 1px solid rgb(180, 190, 203);
+    padding: 3px;
+  }
+  .form-control {
+    margin: 31px 0;
+  }
+  
+  .showcase::before,
+  .showcase::after {
+    content: "";
+    position: absolute;
+    height: 111px;
+    top: 425px;
+    right: 0px;
+    left: 0px;
+    transform: skewY(-3deg);
+    background: white;
+  }
+  
+  .feature {
+    padding-top: 36px;
+    animation: slideInFromBottom 500ms ease-in;
+  }
+  .feature-heading {
+    max-width: 272px;
+    margin: auto;
+  }
+  
+  .feature p {
+    width: 781px;
+    margin: 0 auto;
+  }
+  
+  .paddingtop {
+    padding-top: 12px;
+  }
+  
+  .margintop {
+    margin-top: 11px;
+  }
+  .imgsize {
+    width: 77px;
+    margin: 0 5px;
+  }
+  .heading {
+    margin: 0 36px;
+    margin-bottom: 24px;
+    justify-content: center;
+  }
+  
+  .download {
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: white;
+    z-index: 3;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 51px;
+    height: 266px;
+    width: 360px;
+  }
+  
+  .card h2 {
+    font-weight: lighter;
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+  
+  .btn:hover {
+    transform: scale(0.95);
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .color {
+    color: #fff;
+  }
+  
+  .dropdown-content::-webkit-scrollbar {
+    display: none;
+  }
+  
+  @media (max-width: 900px) {
+    
+  
+    .showcase-text {
+      padding: 2px 36px;
+      width: 100%;
+      margin:auto;
+      margin-top: 175px;
+    }
+    .showcase-text h1 {
+      margin-top: 0px;
+    }
+    .showcase-container {
+      flex-direction: column;
+      height: 643px;
+    }
+    .showcase::before,
+    .showcase::after {
+      height: 58px;
+      top: 390px;
+    }
+    .card {
+      margin: 62px auto;
+    }
+    .showcase-form {
+      background-color: #fff;
+      margin-top: 58px;
+    }
+    .feature-heading {
+      margin-top: 26px;
+    }
+  
+    .feature p {
+         width: 454px;
+      text-align: center;
+    }
+  }

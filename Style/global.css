@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Raleway:wght@500&display=swap");
+
+
+:root {
+    --primary-color: rgb(46, 46, 46);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    /* color: #fff; */
+  }
+  
+
+  .flex {
+    display: flex;
+    
+  }
+
+
+  /* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
