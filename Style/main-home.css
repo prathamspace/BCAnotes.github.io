@@ -174,7 +174,7 @@
     }
     .showcase::before,
     .showcase::after {
-      height: 58px;
+      height: 100px;
       top: 390px;
     }
     .card {
