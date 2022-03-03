@@ -196,15 +196,20 @@
 
   @media (max-width:400px)
   {
+
+    .showcase-form{
+      margin-top: 30px;
+      height: 66px;
+    }
     .showcase::before,
      .showcase::after{
-      top: 458px;
-      height: 51px;
+      top: 449px;
+      height: 26px;
   
      } 
 
      .card{
-       margin: 20px auto;
+       /* margin: 20px auto; */
        width: 283px;
        box-shadow: 0 3px 10px rgb(0 0 0);
      }
