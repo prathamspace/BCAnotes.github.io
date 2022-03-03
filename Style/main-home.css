@@ -193,3 +193,28 @@
       text-align: center;
     }
   }
+
+  @media (max-width:400px)
+  {
+    .showcase::before,
+     .showcase::after{
+      top: 456px;
+      height: 63px;
+     } 
+
+     .card{
+       margin: 20px auto;
+       width: 283px;
+       box-shadow: 0 3px 10px rgb(0 0 0);
+     }
+     .feature-heading{
+      margin-top: 80px;
+
+     }
+     .feature p{
+       width: auto;
+     }
+     .heading {
+      margin: 0 24px;
+     }
+  }

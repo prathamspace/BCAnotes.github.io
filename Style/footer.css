@@ -30,3 +30,23 @@
   .social a i {
       color: #fff;
   }
+
+  
+  @media(max-width:400px){
+    .footer-logo p{
+      font-size: 15px;
+    }
+    .footer li a{
+      font: status-bar;
+    }
+    .social{
+      margin-top: 0;
+      flex-direction: column;
+      justify-content: center;
+    height: 163px;
+}
+    
+    .social a{
+      margin: 2px 0px;
+    }
+  }

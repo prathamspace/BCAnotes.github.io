@@ -38,7 +38,7 @@
     color: whitesmoke;
     background-color: var(--primary-color);
     min-width: 182px;
-  
+    z-index: 4;
     box-shadow: inset 0px 0px 15px 1px;
     border-radius: 12px;
     overflow: scroll;
