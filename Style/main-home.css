@@ -196,25 +196,32 @@
 
   @media (max-width:400px)
   {
+    .showcase-container{
+      height: 431px;
+    }
 
     .showcase-form{
-      margin-top: 30px;
+      margin-top: 0px;
       height: 66px;
+    }
+
+    .showcase-text{
+      margin-top: 30px;
     }
     .showcase::before,
      .showcase::after{
-      top: 449px;
-      height: 26px;
+      top: 395px;
+      height: 49px;
   
      } 
 
      .card{
-       /* margin: 20px auto; */
+       margin: 20px auto;
        width: 283px;
        box-shadow: 0 3px 10px rgb(0 0 0);
      }
      .feature-heading{
-      margin-top: 80px;
+      margin-top: 206px;
 
      }
      .feature p{
