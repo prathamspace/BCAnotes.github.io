@@ -198,8 +198,9 @@
   {
     .showcase::before,
      .showcase::after{
-      top: 456px;
-      height: 63px;
+      top: 458px;
+      height: 54px;
+  
      } 
 
      .card{
