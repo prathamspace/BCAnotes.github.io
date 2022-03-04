@@ -73,7 +73,7 @@ box-shadow: 0px 0px 13px 3px #191919;
   }
 
   .col {
-    background-color: #fff;
+  
     animation: slideInFromBottom 300ms ease-in;
   }
   .col h3 {
