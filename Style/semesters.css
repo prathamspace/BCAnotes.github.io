@@ -4,7 +4,9 @@
   border-bottom: 1px solid white;
 }
 .megacontainer {
-  background: url("../images/semback.png");
+  background: url("../images/semback2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 580px;
   filter: hue-rotate(45deg);
   align-content: center;
@@ -31,17 +33,18 @@
 .col {
   height: 315px;
   width: 300px;
-  background-color: transparent;
+  background-color: #fff;
   border-radius: 12px;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0px 0px 13px 3px #191919;
+  box-shadow: 0px 0px 13px 3px #333333;
 
   animation: slideInFromRight 300ms ease-in;
 }
 
 .col h3 {
-  color: #fff;
+  color: rgb(10, 10, 10);
+  font-weight: 700;
 }
 
 .col ul {
@@ -49,26 +52,34 @@
 }
 
 .col li {
-  margin: 12px 0;
+  margin: 12px 35px;
+  border: 1px solid #fff;
+  background: linear-gradient(358deg, #616161, #8d8d8d);
+  border-radius: 10px;
+
+
 }
 
 .col a {
   color: #fff;
   font-size: 20px;
-  border: 2px solid #572f59;
-  border-radius: 10px;
-  padding: 5px 14px;
+  /* border: 2px solid #572f59; */
+  /* padding: 5px 14px; */
+  width: 70px;
 }
 
 .col a:hover {
-  background-color: rebeccapurple;
+  border-radius: 10px;
+  background-color: #333333;
   color: #fff;
 }
 
 @media (max-width: 900px) {
   .megacontainer {
-    height: 908px;
+    height: 975px;
     flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .megacontainer h1 {
     animation: slideInFromTop 300ms ease-in;
@@ -98,7 +109,7 @@
   .master {
     align-items: center;
     flex-direction: column;
-    margin-top: 220px;
+    margin-top: 277px;
     width: auto;
   }
 
