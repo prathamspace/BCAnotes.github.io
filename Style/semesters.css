@@ -4,7 +4,7 @@
   border-bottom: 1px solid white;
 }
 .megacontainer {
-  background: url("../images/semback2.png");
+  background: url("../images/semback.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 580px;
@@ -54,7 +54,7 @@
 .col li {
   margin: 12px 35px;
   border: 1px solid #fff;
-  background: linear-gradient(358deg, #616161, #8d8d8d);
+  background: linear-gradient(358deg, #ad8ca9, #6789cd);
   border-radius: 10px;
 
 
