@@ -1,5 +1,5 @@
 .aboutus {
-  margin-top: 88px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +46,11 @@ img {
   text-align: center;
   margin: 21px auto;
 }
+.contactus img{
+  width: auto;
+  margin: 0 10px;
 
+}
 .small_heading {
   margin-bottom: 25px;
   padding: 5px;
@@ -64,12 +68,11 @@ img {
   display: flex;
   margin-bottom: 35px;
   justify-content: center;
-  margin-left: -76px;
+ 
 }
 
 .contactus a {
   color: black;
-  margin: 0 40px;
 }
 
 @media (max-width: 900px) {
