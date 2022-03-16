@@ -1,10 +1,10 @@
-@import url('./global.css');
+@import url("./global.css");
 
 .github {
   flex-direction: column;
   align-items: center;
   height: 300px;
-  margin-top: 29px;
+  margin-top: 69px
 }
 
 .github-cards {
@@ -17,46 +17,63 @@
 
 #git-imgcard {
   border-radius: 10px;
+  animation: slideInFromLeft 500ms ease-in;
 }
 .git-btn {
   width: 168px;
-  height: 36px;
+  height: 28px;
   border-radius: 0 10px 0 10px;
   border: none;
   font-weight: 600;
-  background-color: #2e3948;
+  background-color: var(--primary-color);
+
   color: whitesmoke;
   margin-top: 27px;
   box-shadow: 0px 0px 8px 0px #2e3948;
   text-align: center;
   padding-top: 4px;
+  animation: slideInFromRight 500ms ease-in;
+}
+.git-btn p {
+  font-family: monospace;
+  font-size: 16px;
+  margin-bottom: 13px;
 }
 
-.git-btn a{
-    margin-top: 2px;
-    color: aliceblue;
+.git-btn a {
+  margin-top: 2px;
+  color: aliceblue;
+  
+ 
+}
+.git-btn img {
+  width: 30px;
 }
 
 .git-btn:hover {
-  background-color: var(--primary-color);
+  background-color: #2e3948;
 }
 
 .footer {
-  margin-top: 148px;
+  margin-top: 154px;
 }
 
+@media (max-width: 500px) {
+  .github {
+    height: 1550px;
+  }
 
-@media (max-width:400px) {
-    .github{
-        height: 613px;
-    }
+  .github-card{
+    margin: 29px 10px;
+  }
+  .github-cards {
+    flex-direction: column;
+    margin-top: 0;
+   
+  }
 
-    .github-cards{
-        flex-direction: column;
-    }
 
-    .git-btn{
-        margin: 18px auto;
-    }
-    
+  .git-btn {
+    margin: 18px auto;
+  }
 }

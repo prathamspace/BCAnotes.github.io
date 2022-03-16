@@ -73,8 +73,17 @@ img {
 
 .contactus a {
   color: black;
+  background-color: #bd1f2c;
+  border-radius: 10px;
+  padding: 3px 15px;
+  height: 34px;
+  font-weight: bolder;
 }
 
+.contactus a:hover{
+  background-color:rgb(4, 40, 70);
+  border-radius: 10px;
+}
 @media (max-width: 900px) {
   .aboutus_para {
     text-align: center;
