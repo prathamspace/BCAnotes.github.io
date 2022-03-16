@@ -103,12 +103,10 @@
   background-color: #ad1f2a;
   border: none;
   height: 34px;
+  color: #fff;
 }
 
-.compiler-btn a{
-color: #fff;
 
-}
 
 .compiler-btn:hover{
 transform: scale(1.2);
