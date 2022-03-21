@@ -17,7 +17,17 @@
 
 #git-imgcard {
   border-radius: 10px;
+ 
+  width: 200px;
+  height: 263px;
+
+
+
   animation: slideInFromLeft 500ms ease-in;
+}
+
+.img{
+  height: 100%;
 }
 .git-btn {
   width: 168px;
@@ -26,7 +36,7 @@
   border: none;
   font-weight: 600;
   background-color: var(--primary-color);
-
+  margin-left: 24px;
   color: whitesmoke;
   margin-top: 27px;
   box-shadow: 0px 0px 8px 0px #2e3948;
@@ -58,6 +68,14 @@
   margin-top: 154px;
 }
 
+
+/* .sagar{
+  height: 227px;
+}
+
+.abhishek{
+  height: 227px;
+} */
 @media (max-width: 500px) {
   .github {
     height: 1843px;
