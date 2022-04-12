@@ -1,0 +1,1891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../Style//global.css" />
+    <link rel="stylesheet" href="../Style/navbar.css" />
+    <link rel="stylesheet" href="../Style/programs.css" />
+    <link rel="stylesheet" href="../Style/footer.css" />
+    <title>C Programs</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div style="height:80px;" class="navbar">
+      <div style="width: 100%;" class="nav_container flex">
+        <div class="logo">
+          <a style="border-bottom: 0;" href="../index.html">
+            <img src="../images/logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <nav>
+          <ul class="flex">
+            <li>
+              <div class="dropdown">
+                <a href="#">Semester</a>
+                <ul style="right: 0; top: 7px;" class="dropdown-content">
+                  <li class="litag">
+                    <a href="../semesters/first_semester.html">First Sem</a>
+                  </li>
+                  <li class="litag">
+                    <a href="../semesters/second_semester.html">Second Sem</a>
+                  </li>
+                  <li class="litag">
+                    <a href="../semesters/third_semester.html">Third Sem</a>
+                  </li>
+                  <li class="litag">
+                    <a href="../semesters/fourth_semester.html">Forth Sem</a>
+                  </li>
+                  <li class="litag">
+                    <a href="../semesters/fifth_semester.html">Fifth Sem</a>
+                  </li>
+                  <li class="litag">
+                    <a href="../semesters/sixth_semester.html">Sixth Sem</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li><a href="../about_us.html">About </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Programs -->
+
+    <div class="container program">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              Program 1
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingOne"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code1">
+                    <code>
+                        // Program to demonstrate Airthmatic Operator
+
+                            #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main()
+                            {
+                                int a, b, sum, sub, mul, div, mod;
+                                printf("Enter the first value:");
+                                scanf("%d", &a);
+                                printf("Enter the second value:");
+                                scanf("%d", &b);
+                            
+                                sum = a + b;
+                                sub = a - b;
+                                mul = a * b;
+                                div = a / b;
+                                mod = a % b;
+                            
+                                printf("Sum of two number is: %d \n", sum);
+                                printf("Subtraction of two number is: %d \n", sub);
+                                printf("Multiplication of two number is: %d \n", mul);
+                                printf("Division of two number is: %d \n", div);
+                                printf("Modulus of two number is: %d \n", mod);
+                                getch();
+                            }
+                    </code>
+                  </pre>
+                <span
+                  id="btn1"
+                  onclick="copyProgram1()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              Program 2
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwo"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code2">
+                      <code>
+                        //Program to print Armstrong numbers between 1 to 500
+
+                        #include &lt;stdio.h&gt;
+                        #include &lt;conio.h&gt;
+                        void main()
+                        {
+                            int i, n, x, sum;
+                            printf("Armstrong number 1 to 500 are: ");
+                            for (i = 1; i <= 500; i++)
+                            {
+                                sum = 0;
+                                n = 1;
+                                while (n > 0)
+                                {
+                                    x = n % 10;
+                                    sum = sum + (x * x * x);
+                                    n = n / 10;
+                                }
+                                if (sum == 1)
+                                
+                                    printf("%d \t", i);
+                                
+                            }
+                            getch();
+                        }
+                      </code>
+                  </pre>
+                <span
+                  id="btn2"
+                  onclick="copyProgram2()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree"
+            >
+              Program 3
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThree"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code3">
+                      <code>
+                        //Progarm to check weather entered number is armstrong or not.
+
+                        #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                        void main()
+                        {
+                            int n, num, d, sum = 0;
+                            printf("Enter a number = ");
+                            scanf("%d", &n);
+                        
+                            num = n;
+                            while (num > 0)
+                            {
+                                d = num % 10;
+                                sum = sum + (d * d * d);
+                                num = num / 10;
+                            }
+                        
+                            if (sum == n)
+                            {
+                                printf("Entered number is Armstrong");
+                            }
+                            else
+                            {
+                                printf("Entered number is not Armstrong");
+                            }
+                            getch();
+                        }
+                        
+                      </code>
+                  </pre>
+                <span
+                  id="btn3"
+                  onclick="copyProgram3()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour"
+            >
+              Program 4
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFour"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code4"><code>
+                    // Program to Exchange the value of two variables using a third variable
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                        void main()
+                        {
+                            int a, b, third_variable;
+                            printf("Enter the first value: ");
+                            scanf("%d", &a);
+                            printf("Enter the second value: ");
+                            scanf("%d", &b);
+                            printf("Entered first value: %d and second value: %d", &a, &b);
+                            third_variable = a;
+                            a = b;
+                            b = third_variable;
+
+                            printf("The exchanged value of First value = %d and Second value = %d ", a, b);
+                            getch();
+                        }
+                </code></pre>
+                <span
+                  id="bt4"
+                  onclick="copyProgram4()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFive"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFive"
+            >
+              Program 5
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFive"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code5"><code>
+                    // Program to convert the temperature from Fahrehneit to Celcius
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                    void main()
+                    {
+                        float c, f;
+                        printf("Enter the value of temperature in Fahrehneit: ");
+                        scanf("%f", &f);
+                        c = (f - 32) * 5 / 9;
+                        printf("The value of temperature in Celcius: %f", c);
+                        getch();
+                    }
+                </code></pre>
+                <span
+                  id="btn5"
+                  onclick="copyProgram5()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingsix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapsesix"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapsesix"
+            >
+              Program 6
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapsesix"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingsix"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code6"><code>
+                    // Program to find the greatest of three number using conditional operator
+
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                    void main()
+                    {
+                        int number1, number2, number3, bigNumber;
+                        printf("Enter the value of first number: ");
+                        scanf("%d", &number1);
+                        printf("Enter the value of second number: ");
+                        scanf("%d", &number2);
+                        printf("Enter the value of third number: ");
+                        scanf("%d", &number3);
+
+                        bigNumber = (number1 > number2) ? (number1 > number3 ? number1 : number3) : (number2 > number3 ? number2 : number3);
+
+                        printf("The greatest number is: %d ", bigNumber);
+                        getch();
+                    }
+                </code></pre>
+                <span
+                  id="btn6"
+                  onclick="copyProgram6()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingseven">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseseven"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseseven"
+            >
+              Program 7
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseseven"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingseven"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code7"><code>
+                    // Program to accept an integer and find its reverse integer and display both number in screen
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                void main()
+                {
+                    int n, reverseNumber = 0, remainder;
+                    printf("Enter the number you want to Reverse: ");
+                    scanf("%d", &n);
+                    while (n != 0)
+                    {
+                        remainder = n % 10;
+                        reverseNumber = reverseNumber * 10 + remainder;
+                        n /= 10;
+                    }
+
+                    printf("Reverse number= %d", reverseNumber);
+                    getch();
+                }
+                </code></pre>
+                <span
+                  id="btn7"
+                  onclick="copyProgram7()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseEight"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseEight"
+            >
+              Program 8
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseEight"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingEight"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code8"><code>
+                    // Program to find the greatest of three numbers using nested if statements
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                    void main()
+                    {
+                        int a, b, c;
+                        printf("Enter any three numbers:");
+                        scanf("%d %d %d", &a, &b, &c);
+                        if (a > b)
+                        {
+                            if (a > c)
+                                printf("%d is the greatest number.", a);
+                        }
+                        else
+                        {
+                            if (b > c)
+                            {
+                                printf("%d is the greatest number.", b);
+                            }
+                            else
+                                printf("%d is the greates number.", c);
+                        }
+                        getch();
+                    }</code></pre>
+                <span
+                  id="btn8"
+                  onclick="copyProgram8()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseNine"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseNine"
+            >
+              Program 9
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseNine"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingNine"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code9"><code>
+                    // Program to find the greatest of three numbers using nested if statements
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                    void main()
+                    {
+                        int a, b, c;
+                        printf("Enter any three numbers:");
+                        scanf("%d %d %d", &a, &b, &c);
+                        if (a > b)
+                        {
+                            if (a > c)
+                                printf("%d is the greatest number.", a);
+                        }
+                        else
+                        {
+                            if (b > c)
+                            {
+                                printf("%d is the greatest number.", b);
+                            }
+                            else
+                                printf("%d is the greates number.", c);
+                        }
+                        getch();
+                    }
+                </code></pre>
+                <span
+                  id="btn9"
+                  onclick="copyProgram9()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTen"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTen"
+            >
+              Program 10
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTen"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTen"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code10"><code>
+                    // Program for addition of two matrics
+
+                        #include &lt;stdio.h&gt;
+                        #include &lt;conio.h&gt;
+                        int main()
+                        {
+                        int rows, columns, a[10][10], b[10][10], sum[10][10], i, j;
+                        printf("Enter the number of rows (between 1 and 10): ");
+                        scanf("%d", &rows);
+                        printf("Enter the number of columns (between 1 and 10): ");
+                        scanf("%d", &columns);
+
+                        printf("\nEnter elements of 1st matrix:\n");
+                        for (i = 0; i < rows; ++i)
+                            for (j = 0; j < columns; ++j)
+                            {
+                            printf("Enter element a%d%d: ", i + 1, j + 1);
+                            scanf("%d", &a[i][j]);
+                            }
+
+                        printf("Enter elements of 2nd matrix:\n");
+                        for (i = 0; i < rows; ++i)
+                            for (j = 0; j < columns; ++j)
+                            {
+                            printf("Enter element b%d%d: ", i + 1, j + 1);
+                            scanf("%d", &b[i][j]);
+                            }
+
+                        // adding two matrices
+                        for (i = 0; i < rows; ++i)
+                            for (j = 0; j < columns; ++j)
+                            {
+                            sum[i][j] = a[i][j] + b[i][j];
+                            }
+
+                        // printing the result
+                        printf("\nSum of two matrices: \n");
+                        for (i = 0; i < rows; ++i)
+                            for (j = 0; j < columns; ++j)
+                            {
+                            printf("%d   ", sum[i][j]);
+                            if (j == columns - 1)
+                            {
+                                printf("\n\n");
+                            }
+                            }
+
+                        return 0;
+                        }
+                </code></pre>
+                <span
+                  id="btn10"
+                  onclick="copyProgram10()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingeleven">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseeleven"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseeleven"
+            >
+              Program 11
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseeleven"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingeleven"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code11"><code>
+                    // Program to calculate the area of circle
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                    void main()
+                    {
+                        int r;
+                        float area;
+                        printf("Enter the radius: ");
+                        scanf("%d", &r);
+                        area = 3.14 * r * r;
+                        printf("Area of cirle is: %f", area);
+                        getch();
+                    }
+                </code></pre>
+                <span
+                  id="btn11"
+                  onclick="copyProgram11()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTweleve">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTweleve"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTweleve"
+            >
+              Program 12
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTweleve"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTweleve"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code12"><code>
+                    // Program to find the Compound Interest
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                    #include &lt;math.h&gt;
+                    void main()
+                    {
+                        int principle, rate, time, x, compoundInterest;
+                        printf("Enter the value of Principle: ");
+                        scanf("%d", &principle);
+                        printf("Enter the value of Rate Of Interest: ");
+                        scanf("%d", &rate);
+                        printf("Enter the value of Time: ");
+                        scanf("%d", &time);
+                        x = principle * pow((1 + rate * 0.01), time);
+                        compoundInterest = x - principle;
+                        printf("Compund Interest is: %d", compoundInterest);
+                        getch();
+                    }
+                </code></pre>
+                <span
+                  id="btn12"
+                  onclick="copyProgram12()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThirteen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThirteen"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThirteen"
+            >
+              Program 13
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseThirteen"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThirteen"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code13"><code>
+                    // Program to find entered number is even or odd
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                    void main(){
+                        int number; 
+                        printf("Enter an Number: ");
+                        scanf("%d",&number);
+                        if(number%2==0)    
+                        {
+                            printf("Entered number in Even!");
+                        }
+                        else
+                        printf("Entered in number is Odd.");
+                        getch();
+
+                    }
+                </code></pre>
+                <span
+                  id="btn13"
+                  onclick="copyProgram13()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFourteen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFourteen"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFourteen"
+            >
+              Program 14
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFourteen"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFourteen"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code14"><code>
+                    // Program to find the factorial of a number.
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                    void main()
+                    {
+                        int number, i = 1, factorial = 1;
+                        printf("Enter any number: ");
+                        scanf("%d", &number);
+                        while (i <= number)
+                        {
+                            factorial = factorial * i;
+                            i++;
+                        }
+                        printf("Factorial of %d = %d ", number, factorial);
+                        getch();
+                    }
+                </code></pre>
+                <span
+                  id="btn14"
+                  onclick="copyProgram14()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFifteen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFifteen"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFifteen"
+            >
+              Program 15
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFifteen"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFifteen"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code15"><code>
+                    // Program to Calculate factorial of a number using recursion
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+
+                    int fact(int);
+
+                    void main()
+                    {
+                        int x, n;
+                        printf("Enter number: ");
+                        scanf("%d",&n);
+                        x = fact(n);
+                        printf("The factorial of %d  = %d", n, x);
+                        getch();
+                    }
+
+                    int fact(int n)
+                    {
+                        if (n == 0)
+                        {
+                            return (1);
+                        }
+
+                        else
+                            return (n * fact(n - 1));
+
+                    }
+                </code></pre>
+                <span
+                  id="btn15"
+                  onclick="copyProgram15()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingSixteen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSixteen"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSixteen"
+            >
+              Program 16
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseSixteen"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingSixteen"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code16"><code>
+                    // Program to print n terms of fibonacci series
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                    int main()
+                    {
+                        int i, n, t1 = 0, t2 = 1, nextTerm;
+                        printf("Enter the number: ");
+                        scanf("%d", &n);
+                        for (i = 0; i <= n; i++)
+                        {
+                            printf("%d, ", t1);
+                            nextTerm = t1 + t2;
+                            t1 = t2;
+                            t2 = nextTerm;
+                        }
+                        getch();
+                    }
+                </code></pre>
+                <span
+                  id="btn16"
+                  onclick="copyProgram16()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingSeventeen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSeventeen"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSeventeen"
+            >
+              Program 17
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseSeventeen"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingSeventeen"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code17"><code>
+                    // Program to interchange the value of two variables [Call by value]
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+
+                    void swap(int, int);
+
+                    void main()
+                    {
+                        int a = 100, b = 300;
+                        printf("Value before function call are: %d %d \n", a, b);
+                        swap(a, b);
+                        getch();
+                    }
+
+                    void swap(int x, int y)
+                    {
+                        int z;
+                        z = x;
+                        x = y;
+                        y = z;
+                        printf("Values after function call are: %d %d", x, y);
+
+                    }
+                </code></pre>
+                <span
+                  id="btn17"
+                  onclick="copyProgram17()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingEighteen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseEighteen"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseEighteen"
+            >
+              Program 18
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseEighteen"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingEighteen"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code18"><code>
+                    //  Program to change value of two variable using [Call by Refrence]
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+
+                    void swap(int *, int *);
+                    void main()
+                    {
+                        int a = 100, b = 300;
+                        printf("Value before function call are: %d %d \n", a, b);
+                        swap(&a, &b);
+                        printf("Value after function call are: %d %d", a, b);
+                        getch();
+                    }
+
+                    void swap(int *x, int *y)
+                    {
+                        int t;
+                        t = *x;
+                        *x = *y;
+                        *y = t;
+                    }
+                </code></pre>
+                <span
+                  id="btn18"
+                  onclick="copyProgram18()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingNineteen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseNineteen"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseNineteen"
+            >
+              Program 19
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseNineteen"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingNineteen"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code19"><code>
+                    // Program to calculate the ladder if
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                    void main(){
+                        int percentage;
+                        printf("Enter the percentage of student: ");
+                        scanf("%d",&percentage);
+                        if (percentage>75)
+                        {
+                            printf("First Division");
+                        }
+                        else if (percentage>60 && percentage<75)
+                        {
+                            printf("Second Division");
+                        }
+                        else if (percentage>35 && percentage<60)
+                        {
+                            
+                            printf("Third Division");
+                            
+                        
+                        }
+                        else 
+                        printf("Fail!");
+                        getch();
+                        
+                        
+                    }
+                </code></pre>
+                <span
+                  id="btn19"
+                  onclick="copyProgram19()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwenty">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwenty"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwenty"
+            >
+              Program 20
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwenty"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwenty"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code20"><code>
+                    // Program to find weather enetered year is a leap year or not
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                    void main()
+                    {
+                        int year;
+                        printf("Enter the year you want to check: ");
+                        scanf("%d", &year);
+                        (year % 4 == 0 && year % 100 != 0) ? printf("%d is a leap year.", year) : printf("%d is not a leap year.", year);
+                        getch();
+                    }
+                </code></pre>
+                <span
+                  id="btn20"
+                  onclick="copyProgram20()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwentyOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwentyOne"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwentyOne"
+            >
+              Program 21
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwentyOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwentyOne"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code21"><code>
+                    // Program to print n natural numbers.
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                    int main()
+                    {
+                        int number, i;
+                        printf("Enter the number: ");
+                        scanf("%d", &number);
+                        printf("List of natural numbers between 1 to %d\n", number);
+                        for (i = 1; i <= number; i++)
+                        {
+                            printf("%d\t", i);
+                        }
+                        getch();
+                    }
+                </code></pre>
+                <span
+                  id="btn21"
+                  onclick="copyProgram21()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwentyTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwentyTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwentyTwo"
+            >
+              Program 22
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwentyTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwentyTwo"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code22"><code>
+                    // Program to print first 10 multiles of an integer
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                    int main()
+                    {
+                        int n, i;
+                        printf("Enter the integer value: ");
+                        scanf("%d", &n);
+                        for (i = 1; i < 10; i++)
+                        {
+                            printf(" %d X %d =%d\n", n, i, n * i);
+                        }
+                        return 0;
+                    }
+                </code></pre>
+                <span
+                  id="btn22"
+                  onclick="copyProgram22()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwentyThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwentyThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwentyThree"
+            >
+              Program 23
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwentyThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwentyThree"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code23"><code>
+                    // Program to multiply to matricies
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                    int main()
+                    {
+                    int rows, columns, a[10][10], b[10][10], sum[10][10], i, j;
+                    printf("Enter the number of rows (between 1 and 10): ");
+                    scanf("%d", &rows);
+                    printf("Enter the number of columns (between 1 and 10): ");
+                    scanf("%d", &columns);
+
+                    printf("\nEnter elements of 1st matrix:\n");
+                    for (i = 0; i < rows; ++i)
+                        for (j = 0; j < columns; ++j)
+                        {
+                        printf("Enter element a%d%d: ", i + 1, j + 1);
+                        scanf("%d", &a[i][j]);
+                        }
+
+                    printf("Enter elements of 2nd matrix:\n");
+                    for (i = 0; i < rows; ++i)
+                        for (j = 0; j < columns; ++j)
+                        {
+                        printf("Enter element b%d%d: ", i + 1, j + 1);
+                        scanf("%d", &b[i][j]);
+                        }
+
+                    // adding two matrices
+                    for (i = 0; i < rows; ++i)
+                        for (j = 0; j < columns; ++j)
+                        {
+                        sum[i][j] = a[i][j] * b[i][j];
+                        }
+
+                    // printing the result
+                    printf("\nMultiplication of two matrices: \n");
+                    for (i = 0; i < rows; ++i)
+                        for (j = 0; j < columns; ++j)
+                        {
+                        printf("%d   ", sum[i][j]);
+                        if (j == columns - 1)
+                        {
+                            printf("\n\n");
+                        }
+                        }
+
+                    return 0;
+                    }
+                </code></pre>
+                <span
+                  id="btn23"
+                  onclick="copyProgram23()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwentyFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwentyFour"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwentyFour"
+            >
+              Program 24
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwentyFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwentyFour"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code24"><code>
+                    <code>
+                        // Program to change lowercase to uppercase
+    
+                        #include &lt;stdio.h&gt;
+                        #include &lt;conio.h&gt;
+                        #include &lt;string.h&gt;
+                        
+                        int main()
+                        {
+                            char string[100];
+                            printf("Input a string to covert to Uppercase= ");
+                            gets(string);
+                            printf("The string in Uppercase: %s ", strupr(string));
+                            return 0;
+                        }
+                      </code>
+                </code></pre>
+                <span
+                  id="btn24"
+                  onclick="copyProgram24()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwentyFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwentyFive"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwentyFive"
+            >
+              Program 25
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwentyFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwentyFive"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code25"><code>
+                    // Program to calculate the perimeter of circle
+
+                        #include &lt;stdio.h&gt;
+                        #include &lt;conio.h&gt;
+                        void main()
+                        {
+                            int r;
+                            float perimeter;
+                            printf("Enter the radius: ");
+                            scanf("%d", &r);
+                            perimeter = 2 * 3.14 * r;
+                            printf("Perimeter of cirle is: %f", perimeter);
+                            getch();
+                        }
+                </code></pre>
+                <span
+                  id="btn25"
+                  onclick="copyProgram25()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwentySix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwentySix"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwentySix"
+            >
+              Program 26
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwentySix"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwentySix"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code26"><code>
+                    // Program to calculate the simple interest
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                        void main()
+                        {
+                            int p, r, t;
+                            float si;
+                            printf("Enter the Principle: ");
+                            scanf("%d", &p);
+                            printf("Enter the Rate: ");
+                            scanf("%d", &r);
+                            printf("Enter the Time: ");
+                            scanf("%d", &t);
+                            si = (p * r * t) / 100;
+                            printf("Simple Interest is: %f", si);
+                            getch();
+                        }
+                                        
+                    </code></pre>
+                <span
+                  id="btn26"
+                  onclick="copyProgram26()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwentySeven">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwentySeven"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwentySeven"
+            >
+              Program 27
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwentySeven"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwentySeven"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code27"><code>
+                    //Program to find sum of n postive numbers
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                        int main()
+                        {
+                            int n, t, sum = 0, remainder;
+                            printf("Enter an integer\n");
+                            scanf("%d", &n);
+                            t = n;
+                            while (t != 0)
+                            {
+                                remainder = t % 10;
+                                sum = sum + remainder;
+                                t = t / 10;
+                            }
+                        
+                            printf("Sum of Digits of %d = %d\n", n, sum);
+                            return 0;
+                        }
+                </code></pre>
+                <span
+                  id="btn27"
+                  onclick="copyProgram27()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwentyEight">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwentyEight"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwentyEight"
+            >
+              Program 28
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwentyEight"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwentyEight"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code28"><code>
+                    // Program to display days of the week using switch case statement
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                    void main()
+                    {
+                        int day;
+                        printf("Enter any number between 1-7: ");
+                        scanf("%d", &day);
+                        switch (day)
+                        {
+                        case 1:
+                            printf("Sunday");
+                            break;
+                        case 2:
+                            printf("Monday");
+                            break;
+                        case 3:
+                            printf("Tuesday");
+                            break;
+                        case 4:
+                            printf("Wednesday");
+                            break;
+                        case 5:
+                            printf("Thursday");
+                            break;
+                        case 6:
+                            printf("Friday");
+                            break;
+                        case 7:
+                            printf("Saturday");
+                            break;
+
+                        default:
+                            printf("Enter a valid number between 1-7");
+                            break;
+                        }
+
+                        getch();
+                    }
+                </code></pre>
+                <span
+                  id="btn28"
+                  onclick="copyProgram28()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwentyNine">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwentyNine"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwentyNine"
+            >
+              Program 29
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwentyNine"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwentyNine"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code29"><code>
+                    // Program to find Transpose of a matrix
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                    int main() {
+                    int a[10][10], transpose[10][10], r, c;
+                    printf("Enter rows and columns: ");
+                    scanf("%d %d", &r, &c);
+
+                    // asssigning elements to the matrix
+                    printf("\nEnter matrix elements:\n");
+                    for (int i = 0; i < r; ++i)
+                    for (int j = 0; j < c; ++j) {
+                        printf("Enter element a%d%d: ", i + 1, j + 1);
+                        scanf("%d", &a[i][j]);
+                    }
+
+                    // printing the matrix a[][]
+                    printf("\nEntered matrix: \n");
+                    for (int i = 0; i < r; ++i)
+                    for (int j = 0; j < c; ++j) {
+                        printf("%d  ", a[i][j]);
+                        if (j == c - 1)
+                        printf("\n");
+                    }
+
+                    // computing the transpose
+                    for (int i = 0; i < r; ++i)
+                    for (int j = 0; j < c; ++j) {
+                        transpose[j][i] = a[i][j];
+                    }
+
+                    // printing the transpose
+                    printf("\nTranspose of the matrix:\n");
+                    for (int i = 0; i < c; ++i)
+                    for (int j = 0; j < r; ++j) {
+                        printf("%d  ", transpose[i][j]);
+                        if (j == r - 1)
+                        printf("\n");
+                    }
+                    return 0;
+                    }
+                </code></pre>
+                <span
+                  id="btn29"
+                  onclick="copyProgram29()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThirty">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThirty"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThirty"
+            >
+              Program 30
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseThirty"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThirty"
+          >
+            <div class="accordion-body">
+              <div class="codeToolbar">
+                <pre id="code30"><code>
+                    
+                    // Program to change uppercase to lowercase
+
+                    #include &lt;stdio.h&gt;
+                    #include &lt;conio.h&gt;
+                    #include &lt;string.h&gt;
+
+                    int main()
+                    {
+                        char string[100];
+                        printf("Input a string to covert to lowercase= ");
+                        gets(string);
+                        printf("The string in lowercase: %s ", strlwr(string));
+                        return 0;
+                    }
+                </code></pre>
+                <span
+                  id="btn30"
+                  onclick="copyProgram30()"
+                  style="
+                    background-color: darkgray;
+                    border-radius: 9px;
+                    padding: 3px;
+                  "
+                  >Click to copy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="margin-top: 120px" class="footer">
+      <div class="footer-container flex">
+        <div class="footer-logo">
+          <h2 class="color">Sharingan</h2>
+          <p class="color">Copyright © 2022</p>
+        </div>
+        <nav class="footer-nav">
+          <ul class="color">
+            <li><a href="./semesters/first_semester.html">First Sem</a></li>
+
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="social flex">
+          <a href="#">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="./program.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
