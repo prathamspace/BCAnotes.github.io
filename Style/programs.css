@@ -3,13 +3,40 @@
     padding-top: 61px;
 }
 .codeToolbar {
-    background-color: #272822;
+  background: linear-gradient(47deg, #2b2c27, #717463);
     padding: 3px;
     margin: auto;
     border-radius: 10px;
     color: aliceblue;
     width: 60vw;
     cursor: pointer;
+  }
+  span{
+    display: flex;
+    justify-content: center;
+    width: 113px;
+    height: 40px;
+    text-align: center;
+    /* border: 1px solid white; */
+    border: none;
+    border-radius: 7px;
+    filter: drop-shadow(2px 4px 6px black);
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0;
+  background: linear-gradient(47deg, #ff293b,#bd1f2c );
+
+  }
+
+  span:hover{
+    background: linear-gradient(47deg, #bd1f2c,#ff293b );
+    transform: scale(1.1);
+
+  }
+
+  code{
+    font-family: monospace;
   }
   #code {
     padding: 15px;

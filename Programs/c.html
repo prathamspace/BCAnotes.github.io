@@ -70,6 +70,7 @@
     <!-- Programs -->
 
     <div class="container program">
+        <h2 style="text-align: center; margin-bottom: 35px;">C Programs</h2>
       <div class="accordion" id="accordionPanelsStayOpenExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -81,8 +82,7 @@
               aria-expanded="true"
               aria-controls="panelsStayOpen-collapseOne"
             >
-              Program 1
-            </button>
+             To demonstrate Airthmatic Operator</button>
           </h2>
           <div
             id="panelsStayOpen-collapseOne"
@@ -93,8 +93,6 @@
               <div class="codeToolbar">
                 <pre id="code1">
                     <code>
-                        // Program to demonstrate Airthmatic Operator
-
                             #include &lt;stdio.h&gt;
                             #include &lt;conio.h&gt;
                             void main()
@@ -144,7 +142,7 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseTwo"
             >
-              Program 2
+          To print Armstrong numbers between 1 to 500
             </button>
           </h2>
           <div
@@ -156,8 +154,6 @@
               <div class="codeToolbar">
                 <pre id="code2">
                       <code>
-                        //Program to print Armstrong numbers between 1 to 500
-
                         #include &lt;stdio.h&gt;
                         #include &lt;conio.h&gt;
                         void main()
@@ -207,7 +203,7 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseThree"
             >
-              Program 3
+            To check weather entered number is armstrong or not.
             </button>
           </h2>
           <div
@@ -219,7 +215,7 @@
               <div class="codeToolbar">
                 <pre id="code3">
                       <code>
-                        //Progarm to check weather entered number is armstrong or not.
+                     
 
                         #include &lt;stdio.h&gt;
                             #include &lt;conio.h&gt;
@@ -274,7 +270,7 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseFour"
             >
-              Program 4
+            To Exchange the values of variables using a third variable
             </button>
           </h2>
           <div
@@ -285,7 +281,7 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code4"><code>
-                    // Program to Exchange the value of two variables using a third variable
+                    
 
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
@@ -329,7 +325,7 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseFive"
             >
-              Program 5
+          To convert the Temp from Fahrehneit to Celcius
             </button>
           </h2>
           <div
@@ -340,7 +336,7 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code5"><code>
-                    // Program to convert the temperature from Fahrehneit to Celcius
+                    
 
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
@@ -379,7 +375,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapsesix"
             >
-              Program 6
+            To find the greatest number using conditional operator
+
             </button>
           </h2>
           <div
@@ -390,7 +387,6 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code6"><code>
-                    // Program to find the greatest of three number using conditional operator
 
 
                     #include &lt;stdio.h&gt;
@@ -436,7 +432,7 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseseven"
             >
-              Program 7
+            To Reverse a integer
             </button>
           </h2>
           <div
@@ -447,7 +443,7 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code7"><code>
-                    // Program to accept an integer and find its reverse integer and display both number in screen
+                 
 
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
@@ -492,7 +488,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseEight"
             >
-              Program 8
+            To find the greatest number using nested if statements
+
             </button>
           </h2>
           <div
@@ -503,7 +500,6 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code8"><code>
-                    // Program to find the greatest of three numbers using nested if statements
 
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
@@ -553,7 +549,9 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseNine"
             >
-              Program 9
+           To find the greatest  number using  Ternary operator
+
+
             </button>
           </h2>
           <div
@@ -564,29 +562,17 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code9"><code>
-                    // Program to find the greatest of three numbers using nested if statements
 
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
-                    void main()
-                    {
-                        int a, b, c;
-                        printf("Enter any three numbers:");
-                        scanf("%d %d %d", &a, &b, &c);
-                        if (a > b)
-                        {
-                            if (a > c)
-                                printf("%d is the greatest number.", a);
-                        }
-                        else
-                        {
-                            if (b > c)
-                            {
-                                printf("%d is the greatest number.", b);
-                            }
-                            else
-                                printf("%d is the greates number.", c);
-                        }
+                    void main(){
+                        int a, b, biggestNumber;
+                        printf("Enter the  first number:  ");
+                        scanf("%d",&a);
+                        printf("Enter the  second number:  ");
+                        scanf("%d",&b);
+                        biggestNumber=(a>b)?a:b; 
+                        printf("The biggest number is: %d",biggestNumber);
                         getch();
                     }
                 </code></pre>
@@ -614,7 +600,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseTen"
             >
-              Program 10
+            For addition of two matrics
+              
             </button>
           </h2>
           <div
@@ -625,7 +612,6 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code10"><code>
-                    // Program for addition of two matrics
 
                         #include &lt;stdio.h&gt;
                         #include &lt;conio.h&gt;
@@ -699,7 +685,7 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseeleven"
             >
-              Program 11
+            To calculate the area of circle
             </button>
           </h2>
           <div
@@ -710,7 +696,7 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code11"><code>
-                    // Program to calculate the area of circle
+                   
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
                     void main()
@@ -748,7 +734,7 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseTweleve"
             >
-              Program 12
+           To find the Compound Interest
             </button>
           </h2>
           <div
@@ -759,7 +745,7 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code12"><code>
-                    // Program to find the Compound Interest
+                   
 
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
@@ -803,7 +789,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseThirteen"
             >
-              Program 13
+            To find entered number is even or odd
+              
             </button>
           </h2>
           <div
@@ -814,7 +801,6 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code13"><code>
-                    // Program to find entered number is even or odd
 
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
@@ -856,7 +842,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseFourteen"
             >
-              Program 14
+            To find the factorial of a number.
+
             </button>
           </h2>
           <div
@@ -867,7 +854,6 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code14"><code>
-                    // Program to find the factorial of a number.
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
                     void main()
@@ -908,7 +894,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseFifteen"
             >
-              Program 15
+            To Calculate factorial of a number using recursion
+
             </button>
           </h2>
           <div
@@ -919,7 +906,6 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code15"><code>
-                    // Program to Calculate factorial of a number using recursion
 
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
@@ -972,7 +958,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseSixteen"
             >
-              Program 16
+            To print n terms of fibonacci series
+
             </button>
           </h2>
           <div
@@ -983,7 +970,6 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code16"><code>
-                    // Program to print n terms of fibonacci series
 
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
@@ -1026,7 +1012,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseSeventeen"
             >
-              Program 17
+            To interchange the value of two variables [Call by value]
+
             </button>
           </h2>
           <div
@@ -1037,7 +1024,6 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code17"><code>
-                    // Program to interchange the value of two variables [Call by value]
 
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
@@ -1086,7 +1072,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseEighteen"
             >
-              Program 18
+            To change value of two variable using [Call by Refrence]
+
             </button>
           </h2>
           <div
@@ -1097,7 +1084,6 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code18"><code>
-                    //  Program to change value of two variable using [Call by Refrence]
 
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
@@ -1144,7 +1130,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseNineteen"
             >
-              Program 19
+            To calculate the percentage ladder if
+
             </button>
           </h2>
           <div
@@ -1155,7 +1142,6 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code19"><code>
-                    // Program to calculate the ladder if
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
                     void main(){
@@ -1208,7 +1194,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseTwenty"
             >
-              Program 20
+            To find weather enetered year is a leap year or not
+
             </button>
           </h2>
           <div
@@ -1219,7 +1206,6 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code20"><code>
-                    // Program to find weather enetered year is a leap year or not
 
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
@@ -1256,7 +1242,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseTwentyOne"
             >
-              Program 21
+            To print n natural numbers.
+
             </button>
           </h2>
           <div
@@ -1267,7 +1254,6 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code21"><code>
-                    // Program to print n natural numbers.
 
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
@@ -1308,7 +1294,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseTwentyTwo"
             >
-              Program 22
+            To print first 10 multiles of an integer
+
             </button>
           </h2>
           <div
@@ -1319,7 +1306,6 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code22"><code>
-                    // Program to print first 10 multiles of an integer
 
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
@@ -1359,7 +1345,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseTwentyThree"
             >
-              Program 23
+            To multiply to matricies
+
             </button>
           </h2>
           <div
@@ -1370,7 +1357,6 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code23"><code>
-                    // Program to multiply to matricies
 
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
@@ -1444,7 +1430,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseTwentyFour"
             >
-              Program 24
+            To change lowercase to uppercase
+
             </button>
           </h2>
           <div
@@ -1456,7 +1443,6 @@
               <div class="codeToolbar">
                 <pre id="code24"><code>
                     <code>
-                        // Program to change lowercase to uppercase
     
                         #include &lt;stdio.h&gt;
                         #include &lt;conio.h&gt;
@@ -1496,7 +1482,7 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseTwentyFive"
             >
-              Program 25
+         To calculate the perimeter of circle
             </button>
           </h2>
           <div
@@ -1507,7 +1493,7 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code25"><code>
-                    // Program to calculate the perimeter of circle
+                  
 
                         #include &lt;stdio.h&gt;
                         #include &lt;conio.h&gt;
@@ -1546,7 +1532,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseTwentySix"
             >
-              Program 26
+            To calculate the simple interest
+
             </button>
           </h2>
           <div
@@ -1557,7 +1544,6 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code26"><code>
-                    // Program to calculate the simple interest
 
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
@@ -1601,7 +1587,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseTwentySeven"
             >
-              Program 27
+            To find sum of n postive numbers
+
             </button>
           </h2>
           <div
@@ -1612,7 +1599,6 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code27"><code>
-                    //Program to find sum of n postive numbers
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
                         int main()
@@ -1656,7 +1642,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseTwentyEight"
             >
-              Program 28
+            To display days of the week using switch case statement
+
             </button>
           </h2>
           <div
@@ -1667,7 +1654,6 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code28"><code>
-                    // Program to display days of the week using switch case statement
 
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
@@ -1732,7 +1718,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseTwentyNine"
             >
-              Program 29
+            To find Transpose of a matrix
+
             </button>
           </h2>
           <div
@@ -1743,7 +1730,6 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code29"><code>
-                    // Program to find Transpose of a matrix
 
                     #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
@@ -1810,7 +1796,8 @@
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseThirty"
             >
-              Program 30
+            To change uppercase to lowercase
+
             </button>
           </h2>
           <div
@@ -1821,10 +1808,7 @@
             <div class="accordion-body">
               <div class="codeToolbar">
                 <pre id="code30"><code>
-                    
-                    // Program to change uppercase to lowercase
-
-                    #include &lt;stdio.h&gt;
+                   #include &lt;stdio.h&gt;
                     #include &lt;conio.h&gt;
                     #include &lt;string.h&gt;
 
